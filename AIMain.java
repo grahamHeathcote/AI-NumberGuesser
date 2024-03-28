@@ -3,7 +3,6 @@ import java.util.Arrays;
 
 public class AIMain {
     public static void main(String[] args) {
-        // Example: input layer size = 10, one hidden layer with 5 neurons, output layer size = 1
         int inputCount = 4;
         int[] hiddenLayerCounts = {3};
         int outputCount = 1;

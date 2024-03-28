@@ -30,7 +30,7 @@ public class Neuron {
     }
 
     public void calculateDelta(double targetOutput) {
-        double error = targetOutput - output; // For output layer
+        double error = targetOutput - output; 
         this.delta = error * sigmoidDerivative(output);
     }
 
@@ -39,10 +39,9 @@ public class Neuron {
         for (Neuron neuron : nextLayer) {
             sum += neuron.weights[index] * neuron.delta;
         }
-        this.delta = sum * sigmoidDerivative(output); // For hidden layers
+        this.delta = sum * sigmoidDerivative(output);
     }
 
-    // Update weights and bias for this neuron
     public void updateWeights(double[] inputs, double learningRate) {
         for (int i = 0; i < weights.length; i++) {
             weights[i] += learningRate * delta * inputs[i];
