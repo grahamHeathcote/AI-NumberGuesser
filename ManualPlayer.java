@@ -1,4 +1,3 @@
-package AINumberGuesser;
 import java.util.Scanner;
 
 public class ManualPlayer {

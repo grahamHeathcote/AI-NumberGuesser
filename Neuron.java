@@ -1,4 +1,3 @@
-package AINumberGuesser;
 import java.util.List;
 
 public class Neuron {

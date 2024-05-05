@@ -1,4 +1,3 @@
-package AINumberGuesser;
 import java.util.Arrays;
 
 public class AIMain {
